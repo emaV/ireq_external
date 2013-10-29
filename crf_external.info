@@ -27,3 +27,4 @@ features[variable][] = menu_parent_crf_external
 features[variable][] = node_options_crf_external
 features[variable][] = node_preview_crf_external
 features[variable][] = node_submitted_crf_external
+features[variable][] = pathauto_node_crf_external_pattern

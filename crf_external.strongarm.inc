@@ -123,5 +123,12 @@ function crf_external_strongarm() {
   $strongarm->value = 0;
   $export['node_submitted_crf_external'] = $strongarm;
 
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_node_crf_external_pattern';
+  $strongarm->value = 'request/[node:title]';
+  $export['pathauto_node_crf_external_pattern'] = $strongarm;
+
   return $export;
 }
