@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * crf_external.features.inc
+ * ireq_external.features.inc
  */
 
 /**
  * Implements hook_ctools_plugin_api().
  */
-function crf_external_ctools_plugin_api($module = NULL, $api = NULL) {
+function ireq_external_ctools_plugin_api($module = NULL, $api = NULL) {
   if ($module == "strongarm" && $api == "strongarm") {
     return array("version" => "1");
   }
@@ -16,9 +16,9 @@ function crf_external_ctools_plugin_api($module = NULL, $api = NULL) {
 /**
  * Implements hook_node_info().
  */
-function crf_external_node_info() {
+function ireq_external_node_info() {
   $items = array(
-    'crf_external' => array(
+    'ireq_external' => array(
       'name' => t('External Request'),
       'base' => 'node_content',
       'description' => t('External Report'),

@@ -1,18 +1,18 @@
 <?php
 /**
  * @file
- * crf_external.features.field_instance.inc
+ * ireq_external.features.field_instance.inc
  */
 
 /**
  * Implements hook_field_default_field_instances().
  */
-function crf_external_field_default_field_instances() {
+function ireq_external_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-crf_external-field_collection_request_ref'
-  $field_instances['node-crf_external-field_collection_request_ref'] = array(
-    'bundle' => 'crf_external',
+  // Exported field_instance: 'node-ireq_external-field_collection_request_ref'
+  $field_instances['node-ireq_external-field_collection_request_ref'] = array(
+    'bundle' => 'ireq_external',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
@@ -52,9 +52,9 @@ function crf_external_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-crf_external-field_crf_request_url'
-  $field_instances['node-crf_external-field_crf_request_url'] = array(
-    'bundle' => 'crf_external',
+  // Exported field_instance: 'node-ireq_external-field_ireq_request_url'
+  $field_instances['node-ireq_external-field_ireq_request_url'] = array(
+    'bundle' => 'ireq_external',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
@@ -74,7 +74,7 @@ function crf_external_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_crf_request_url',
+    'field_name' => 'field_ireq_request_url',
     'label' => 'External URL',
     'required' => 0,
     'settings' => array(
